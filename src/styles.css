@@ -1,0 +1,112 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.editor {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+/* actions */
+.actions {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  margin-bottom: 10px;
+  position: sticky;
+}
+button {
+  height: 25px;
+  min-width: 25px;
+  font-weight: normal;
+  background-color: white;
+  border: 1px solid lightgray;
+}
+button:hover {
+  background-color: lightgray;
+}
+.selected_button {
+  font-weight: bold;
+  background-color: lightgray;
+  border: 1px solid gray;
+}
+
+/* sheet */
+.sheet {
+  position: ;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+}
+.pannel {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+.unity_box {
+  width: 25px;
+  height: 25px;
+  padding: 1px;
+  border: 1px solid lightgray;
+}
+.row_header {
+  display: flex;
+  flex-direction: column;
+}
+.row_header_cell {
+  width: 25px;
+  height: 25px;
+  border: 1px solid lightgray;
+  padding: 1.12px;
+}
+.column_header {
+  display: flex;
+  flex-direction: row;
+}
+.column_header_cell {
+  height: 25px;
+  width: 120px;
+  border: 1px solid lightgray;
+  padding: 1px;
+}
+.sheet_render {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  overflow: auto;
+}
+.sheet_row {
+  display: flex;
+  flex-direction: row;
+}
+.active {
+  opacity: 0.4;
+  background-color: lightblue;
+}
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.cell_input {
+  padding: 0px;
+  height: 25px;
+  width: 120px;
+  z-index: 5;
+}
+.suggestion {
+  height: 25px;
+  width: 120px;
+  position: absolute;
+  opacity: 0.7;
+  padding: 0px;
+}
